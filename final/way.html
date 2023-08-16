@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nextshop - Make your fashion more perfect.</title>
+    <link rel="icon" type="image/png" href="https://next-shop-gilt.vercel.app/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../final/way.css">
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <h1 onclick="location.replace('../index.html')">NextShop</h1>
+            <div class="btn">
+                <button>Home</button>
+                <button>Shop Now</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="search" id="searchBx">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search"
+                    onfocus="document.getElementById('searchBx').style.backgroundColor= 'white'"
+                    onblur="document.getElementById('searchBx').style.backgroundColor= '#374151'">
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" aria-hidden="true" class="h-6 w-6" id="cart">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z">
+                </path>
+            </svg>
+
+            <h1>Hello,<br><span id="username" onclick="window.location.href = '../signup/signin.html'">Sign In</span>
+            </h1>
+        </div>
+    </nav>
+    <footer>© 2023 NextShop. All rights reserved.</footer>
+
+</body>
+
+</html>
