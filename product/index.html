@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nextshop - Make your fashion more perfect.</title>
+    <link rel="icon" type="image/png" href="https://next-shop-gilt.vercel.app/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../product/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <h1 onclick="location.replace('../index.html')">NextShop</h1>
+            <div class="btn">
+                <button>Home</button>
+                <button>Shop Now</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="search" id="searchBx">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search"
+                    onfocus="document.getElementById('searchBx').style.backgroundColor= 'white'"
+                    onblur="document.getElementById('searchBx').style.backgroundColor= '#374151'">
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" aria-hidden="true" class="h-6 w-6" id="cart">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z">
+                </path>
+            </svg>
+
+            <h1>Hello,<br><span id="username" onclick="window.location.href = '../signup/signin.html'">Sign In</span>
+            </h1>
+        </div>
+    </nav>
+
+    <section class="shopping">
+        <h1>Shopping Cart</h1>
+        <div class="form">
+            <div class="item">
+                <div class="img">
+                    <img
+                        src="https://next-shop-gilt.vercel.app/_next/image?url=https%3A%2F%2Fxcdn.next.co.uk%2Fcommon%2Fitems%2Fdefault%2Fdefault%2Fitemimages%2Faltitemzoom%2F419411s.jpg%3Fim%3DResize%2Cwidth%3D364&w=1920&q=75">
+                </div>
+                <div class="details">
+                    <h1>Tupac California Love T-shirt</h1>
+                    <p>Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus
+                        malesuada et at...</p>
+                    <select id="no#">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+                <i class="fa fa-xmark"></i>
+            </div>
+            <div class="bill">
+                <h1>Order Summary</h1>
+                <div class="bill-item">
+                    <p>Subtotal</p>
+                    <h3>$1458</h3>
+                </div>
+                <div class="bill-item">
+                    <p>Tax(18%)</p>
+                    <h3>$262</h3>
+                </div>
+                <div class="bill-item total">
+                    <h1>Order Total</h1>
+                    <h3>$ 1720</h3>
+                </div>
+                <button onclick="window.location.href = '../checkout/index.html'">Checkout</button>
+            </div>
+        </div>
+    </section>
+    <footer>© 2023 NextShop. All rights reserved.</footer>
+
+</body>
+
+</html>
